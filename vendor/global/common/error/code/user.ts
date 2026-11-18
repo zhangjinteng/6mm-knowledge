@@ -1,0 +1,44 @@
+import { type ErrType } from '../errorCode';
+import { i18nT } from '../../i18n/utils';
+/* team: 503000 */
+export enum UserErrEnum {
+  notUser = 'notUser',
+  userExist = 'userExist',
+  unAuthRole = 'unAuthRole',
+  account_psw_error = 'account_psw_error',
+  unAuthSso = 'unAuthSso',
+  two_factor_code_error = 'two_factor_code_error'
+}
+const errList = [
+  {
+    statusText: UserErrEnum.notUser,
+    message: i18nT('common:code_error.account_not_found')
+  },
+  {
+    statusText: UserErrEnum.userExist,
+    message: i18nT('common:code_error.account_exist')
+  },
+  {
+    statusText: UserErrEnum.account_psw_error,
+    message: i18nT('common:code_error.account_error')
+  },
+  {
+    statusText: UserErrEnum.unAuthSso,
+    message: i18nT('user:sso_auth_failed')
+  },
+  {
+    statusText: UserErrEnum.two_factor_code_error,
+    message: i18nT('user:two_factor_code_error')
+  }
+];
+export default errList.reduce((acc, cur, index) => {
+  return {
+    ...acc,
+    [cur.statusText]: {
+      code: 503000 + index,
+      statusText: cur.statusText,
+      message: cur.message,
+      data: null
+    }
+  };
+}, {} as ErrType<`${UserErrEnum}`>);

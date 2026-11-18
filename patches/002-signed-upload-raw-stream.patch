@@ -1,0 +1,24 @@
+diff --git a/src/modules/file-storage/file-storage.routes.ts b/src/modules/file-storage/file-storage.routes.ts
+--- a/src/modules/file-storage/file-storage.routes.ts
++++ b/src/modules/file-storage/file-storage.routes.ts
+@@ -140,7 +140,11 @@ const fileStorageRoutes: FastifyPluginAsync = async (app) => {
+     controller.readCommonFile.bind(controller)
+   );
+ 
+-  route.put(
++  await app.register(async (uploads) => {
++    // Signed uploads must preserve bytes, including text/JSON/Office content types.
++    uploads.removeAllContentTypeParsers();
++    uploads.addContentTypeParser('*', (_request, payload, done) => done(null, payload));
++    uploads.withTypeProvider<ZodTypeProvider>().put(
+     '/api/system/file/upload/*',
+     {
+       schema: {
+@@ -161,6 +165,7 @@ const fileStorageRoutes: FastifyPluginAsync = async (app) => {
+     },
+     controller.uploadFile.bind(controller)
+   );
++  });
+ 
+ };
+ 

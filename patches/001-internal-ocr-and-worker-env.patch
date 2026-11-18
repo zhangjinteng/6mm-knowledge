@@ -1,0 +1,34 @@
+diff --git a/vendor/service/common/file/read/utils.ts b/vendor/service/common/file/read/utils.ts
+--- a/vendor/service/common/file/read/utils.ts
++++ b/vendor/service/common/file/read/utils.ts
+@@ -1,7 +1,7 @@
+ import FormData from 'form-data';
+ import fs from 'fs';
+ import type { ReadFileResponse } from '../../../worker/readFile/type';
+-import { axios } from '../../api/axios';
++import { axios, axiosWithoutSSRF } from '../../api/axios';
+ import { batchRun } from '../../../../global/common/system/utils';
+ import { matchMdImg } from '../../../../global/common/string/markdown';
+ import { createPdfParseUsage } from '../../../support/wallet/usage/controller';
+@@ -94,7 +94,8 @@
+     data.append('file', buffer, {
+       filename: `file.${extension}`
+     });
+-    const { data: response } = await axios.post<{
++    const client = url === 'http://127.0.0.1:9002/parse' ? axiosWithoutSSRF : axios;
++    const { data: response } = await client.post<{
+       pages: number;
+       markdown: string;
+       error?: Object | string;
+diff --git a/vendor/service/worker/utils.ts b/vendor/service/worker/utils.ts
+--- a/vendor/service/worker/utils.ts
++++ b/vendor/service/worker/utils.ts
+@@ -21,6 +21,8 @@
+ export const getSafeEnv = () => {
+   return {
+     MAX_HTML_TRANSFORM_CHARS: String(serviceEnv.MAX_HTML_TRANSFORM_CHARS),
++    FILE_TOKEN_KEY: 'worker-not-an-auth-service',
++    AES256_SECRET_KEY: 'worker-not-an-auth-service',
+     NODE_ENV: process.env.NODE_ENV,
+     HTTP_PROXY: process.env.HTTP_PROXY,
+     HTTPS_PROXY: process.env.HTTPS_PROXY,

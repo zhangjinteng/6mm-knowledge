@@ -1,0 +1,11 @@
+node_modules
+**/node_modules
+.git
+private
+.env*
+data
+dist
+tests
+docs
+*.tar
+*.tar.gz

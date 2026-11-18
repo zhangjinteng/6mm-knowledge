@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+private/
+data/
+*.tar
+*.tar.gz
+coverage/
+.DS_Store
+._*
+/config/models.json

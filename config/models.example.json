@@ -1,0 +1,32 @@
+[
+  {
+    "type": "llm",
+    "model": "REPLACE_WITH_LLM_MODEL",
+    "name": "LLM",
+    "provider": "custom",
+    "isActive": true,
+    "requestUrl": "https://MODEL_HOST/v1/chat/completions",
+    "requestAuth": "REPLACE_WITH_API_KEY",
+    "maxContext": 32000,
+    "maxResponse": 4000,
+    "quoteMaxToken": 10000,
+    "functionCall": false,
+    "toolChoice": false,
+    "vision": false,
+    "defaultConfig": {}
+  },
+  {
+    "type": "embedding",
+    "model": "REPLACE_WITH_EMBEDDING_MODEL",
+    "name": "Embedding",
+    "provider": "custom",
+    "isActive": true,
+    "requestUrl": "https://MODEL_HOST/v1/embeddings",
+    "requestAuth": "REPLACE_WITH_API_KEY",
+    "defaultToken": 512,
+    "maxToken": 8192,
+    "batchSize": 8,
+    "normalization": true,
+    "weight": 1
+  }
+]

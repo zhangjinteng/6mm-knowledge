@@ -1,0 +1,25 @@
+services:
+  knowledge:
+    container_name: 6mm-knowledge-test
+    image: 6mm-knowledge:0.1.0
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "${KNOWLEDGE_BIND_IP:-127.0.0.1}:${KNOWLEDGE_PORT:-18086}:8080"
+    environment:
+      KNOWLEDGE_PUBLIC_URL: ${KNOWLEDGE_PUBLIC_URL:-http://127.0.0.1:18086}
+      GOMAXPROCS: "4"
+      OMP_THREAD_LIMIT: "2"
+    volumes:
+      - ./data:/data
+    mem_limit: 4g
+    cpus: 4
+    pids_limit: 512
+    stop_grace_period: 120s
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"

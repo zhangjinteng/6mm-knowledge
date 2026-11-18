@@ -1,0 +1,362 @@
+[
+  {
+    "path": "/apiDataset/getCatalog",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/apiDataset/getCatalog.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/apiDataset/getPathNames",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/apiDataset/getPathNames.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/apiDataset/list",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/apiDataset/list.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/apiDataset/listExistId",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/apiDataset/listExistId.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/create",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/create.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/create/apiCollection",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/create/apiCollection.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/create/apiCollectionV2",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/create/apiCollectionV2.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/create/backup",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/create/backup.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/create/fileId",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/create/fileId.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/create/images",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/create/images.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/create/link",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/create/link.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/create/localFile",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/create/localFile.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/create/reTrainingCollection",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/create/reTrainingCollection.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/create/template",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/create/template.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/create/text",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/create/text.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/delete",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/delete.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/detail",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/detail.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/export",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/export.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/list",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/list.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/listV2",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/listV2.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/paths",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/paths.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/read",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/read.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/scrollList",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/scrollList.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/sync",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/sync.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/trainingDetail",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/trainingDetail.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/collection/update",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/collection/update.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/create",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/create.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/createWithFiles",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/createWithFiles.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/data/delete",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/data/delete.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/data/detail",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/data/detail.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/data/getQuoteData",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/data/getQuoteData.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/data/index/create",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/data/index/create.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/data/index/delete",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/data/index/delete.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/data/index/update",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/data/index/update.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/data/insertData",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/data/insertData.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/data/insertImages",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/data/insertImages.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/data/list",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/data/list.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/data/pushData",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/data/pushData.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/data/update",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/data/update.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/data/v2/list",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/data/v2/list.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/delete",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/delete.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/detail",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/detail.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/exportAll",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/exportAll.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/file/getPreviewChunks",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/file/getPreviewChunks.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/file/getSearchTestImagePreviewUrls",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/file/getSearchTestImagePreviewUrls.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/file/presignDatasetFilePostUrl",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/file/presignDatasetFilePostUrl.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/file/presignSearchTestImage",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/file/presignSearchTestImage.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/folder/create",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/folder/create.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/getPermission",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/getPermission.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/list",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/list.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/paths",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/paths.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/resumeInheritPermission",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/resumeInheritPermission.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/searchTest",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/searchTest.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/training/deleteTrainingData",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/training/deleteTrainingData.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/training/getDatasetTrainingQueue",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/training/getDatasetTrainingQueue.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/training/getTrainingDataDetail",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/training/getTrainingDataDetail.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/training/getTrainingError",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/training/getTrainingError.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/training/rebuildEmbedding",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/training/rebuildEmbedding.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/training/updateTrainingData",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/training/updateTrainingData.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  },
+  {
+    "path": "/update",
+    "sourcePath": "projects/app/src/pages/api/core/dataset/update.ts",
+    "implementation": "extracted",
+    "validation": "not-run"
+  }
+]
